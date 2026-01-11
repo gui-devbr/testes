@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div {background: blue;
+min-width: 200px;
+height: 200px;
+line-height:200px;
+text-align:center;}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="div">Intereja</div>
+
+
+
+    <script>
+var area = document.getElementById('div')
+
+area.addEventListener('click', clicou)
+area.addEventListener('mouseenter', entrou)
+area.addEventListener('mouseout', saiu)
+
+
+
+function clicou (){
+    area.textContent = "clicou!"
+    area.style.background = "red"
+}
+
+function entrou (){
+    area.textContent = "entrou!"
+    area.style.background = "chocolate"
+}
+
+function saiu (){
+    area.textContent = "saiu!"
+    area.style.background = "blue"
+}
+
+
+    </script>
+</body>
+</html>
